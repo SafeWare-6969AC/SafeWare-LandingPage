@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+header { 
+    display: flex;
+    background: linear-gradient(90deg, #263D67, #2DD574); 
+    padding: 1.5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; /* hace que el header quede fijo */
+    top: 0; /* lo mantiene pegado arriba */
+    left: 0;
+    width: 100%;
+    z-index: 100; /* asegura que quede sobre el resto del contenido */
+    align-items: center; /* Centra verticalmente */
+    transition: padding 0.3s ease; /* suaviza el cambio de tamaño */
+    
+} 
+
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    font-family: 'Inter', sans-serif; 
+    flex-wrap: wrap; /* permite que los elementos bajen si no hay espacio */
+    width: 100%; /* que ocupe todo el ancho */
+    padding: 0  5%; /* margen lateral fluido */
+} 
+
+.navbar_logo { 
+    display: flex; 
+    align-items: center; 
+    color: #fff; 
+   font-size: clamp(1.2em, 2.5vw, 1.6em); /* se adapta según el ancho de la pantalla */
+    font-weight: bold; }
+
+.navbar_logo img { 
+    height: clamp(45px, 8vw, 65px); /* tamaño fluido para el logo */ 
+    margin-right: 5%; } 
+
+.navbar__menu { 
+    display: flex; 
+    align-items: center; 
+ flex-wrap: wrap; /* si no hay espacio, los enlaces bajan */
+} 
+    
+.navbar__links { 
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; } 
+
+.navbar__links li { 
+    margin: 0 15px; 
+    position: relative; /* Añadido para que los enlaces sean el contexto de los pseudo-elementos */ } 
+
+.navbar__links a { 
+    color: #fff; text-decoration: 
+    none; font-size: 1em; position: relative; /* Necesario para posicionar el ::after correctamente */ 
+    transition: color 0.3s, width 0.3s; /* Añadido width a la transición */ 
+} 
+.navbar__links a::after { 
+    content: ""; position: absolute; bottom: -5px; /* Ajusta la posición debajo del texto */ 
+    left: 0; width: 0; /* Inicialmente cero, aparece al hacer hover */ 
+    height: 2px; background: #fff; /* Línea blanca para mejor contraste */ 
+    transition: width 0.3s ease; /* Transición suave para el ancho */ 
+} 
+
+.navbar__links a:hover::after { 
+    width: 100%; /* Expande la línea al 100% del ancho del enlace al hacer hover */ } 
+
+.buttonC { margin-left: 20px; } 
+.buttonC a { background-color: #fefefe; color: #043873; padding: 10px 20px; 
+    border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; } 
+.buttonC a:hover { background-color: #ffffff; box-shadow: 0 8px 12px rgba(39, 3, 244, 0.416); } 
+
+/* === Botón Hamburguesa === */
+.hamburguesa {
+  display: none; /* oculto por defecto */
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Responsive Design */ 
+@media (max-width: 900px) { 
+    /*.header {list-style: none;
+        padding: 0;
+        width: fit-content; /* centra el bloque */
+        /*text-align: left; /* alinea el texto dentro */
+
+    .navbar
+    .navbar { 
+        justify-content: space-between;
+        flex-direction: column; 
+        padding: 1%;} 
+    .navbar_logo { 
+        margin-bottom: 0px; 
+        left: 0px; } 
+    .navbar__menu { 
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color:  #195046;
+        flex-direction: column; 
+        align-items: center; } 
+    .navbar__links {  
+        flex-direction: column; text-align: center; } 
+    .navbar__links li { 
+        margin: 10px 0; } 
+    .buttonC { 
+        margin: 10px 0 0; }
+    .hamburguesa {
+        z-index: 100; /* asegura que quede sobre el resto del contenido */
+        align-items: center; /* Centra verticalmente */
+        display: flex;
+    }
+    .navbar__menu.show {
+        max-width: 1200px; 
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        align-items: center; /* Centra verticalmente */
+        padding: 5.5%;
+    }
+
+}
+
+/* Responsive para pantallas muy pequeñas (<400px) */
+@media (max-width: 400px) {
+    header {
+        padding: 2%; /* más espacio pequeño arriba y abajo */
+        
+    }
+    .navbar
+     .navbar { 
+        justify-content: space-between;
+        flex-direction: column; 
+        padding: 1%;
+    width: 100%;
+padding: 0 3%;} 
+    .navbar_logo {
+        font-size: 1.2em; /* reducir tamaño del texto */
+    }
+
+    .navbar_logo img {
+        height: 35px; /* logo más pequeño */
+        margin-right: 2%;
+    }
+
+    .navbar__links a {
+        font-size: 0.9em; /* enlaces más pequeños */
+        padding: 5px 0;
+        margin: 0px;
+    }
+
+    .buttonC a {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+
+    .hamburguesa {
+        font-size: 1.5em; /* icono más pequeño */
+    }
+
+    .navbar__menu.show {
+        width: 100%;
+        padding: 5%; /* espacio interno mayor para comodidad */
+    }
+
+    .navbar__links li {
+        margin: 5px 0; /* reducir márgenes de enlaces */
+    }
+}
