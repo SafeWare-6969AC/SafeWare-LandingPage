@@ -1,8 +1,36 @@
-/* Language Switcher */
+/* === BOTÓN FLOTANTE DE CONTACTO === */
+.floating-contact {
+  position: fixed;
+  bottom: 90px; /* Ajuste para estar arriba del selector */
+  right: 25px;
+  background-color: #2DD574;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 1100; /* Más alto que el selector */
+}
+
+.floating-contact:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.floating-contact .material-icons {
+  font-size: 26px;
+}
+
+/* === SWITCHER DE IDIOMA === */
 .language-switcher-container {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 25px; /* Espaciado bajo el botón de contacto */
+  right: 25px;
   z-index: 1000;
 }
 
@@ -29,7 +57,20 @@
 }
 
 #language-switcher .lang-btn.active {
-  background: #2DD574;       /* Amarillo */
-  color: #043873;            /* Azul */
+  background: #2DD574;  /* Verde vivo */
+  color: #043873;       /* Azul oscuro */
   box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .floating-contact {
+    bottom: 85px;
+    width: 48px;
+    height: 48px;
+  }
+  #language-switcher .lang-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+  }
 }

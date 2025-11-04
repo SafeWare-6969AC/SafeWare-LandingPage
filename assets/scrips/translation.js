@@ -7,7 +7,8 @@ const translation ={
       plans: 'Planes',
       testimonials: 'Testimonios',
       faq: 'Preguntas',
-      contact: 'Contactanos'
+      contact: 'Contactanos',
+      LogIn: 'Iniciar Sesión'
     },
     hero: {
         title: 'SafeWare: Detección inteligente de riesgos en tiempo real.',
@@ -211,6 +212,7 @@ en : {
     testimonials: "Testimonials",
     faq: "FAQ",
     contact: "Contact Us",
+    LogIn: 'Log In'
   },
   hero: {
     title: "SafeWare: Intelligent real-time risk detection.",
