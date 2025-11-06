@@ -126,19 +126,19 @@ const translation ={
     items: {
         1: {
             question: '¿Qué es SafeWare?',
-            answer: 'SafeWare es una solución avanzada que utiliza inteligencia artificial para detectar riesgos en tiempo real, protegiendo tu industria las 24 horas del día.'
+            answer: 'SafeWare es un sistema inteligente que monitorea condiciones críticas en almacenes e industrias, detectando anomalías y previniendo fallas mediante sensores IoT y alertas en tiempo real.'
         },
         2: {
             question: '¿Quién puede usar SafeWare?',
             answer: 'SafeWare está diseñado para industrias como manufactura, logística y almacenes que necesitan monitoreo continuo y seguridad avanzada.'
         },
         3: {
-            question: '¿Necesito conocimientos técnicos para usarlo?',
-            answer: 'No, SafeWare ofrece una interfaz intuitiva que permite a cualquier usuario configurar alertas y monitorear riesgos sin complicaciones.'
+            question: '¿Qué tipo de anomalías puede detectar SafeWare?',
+            answer: 'SafeWare detecta anomalías de temperatura, humedad, vibración, movimiento y fugas, identificando cualquier condición que pueda comprometer la seguridad u operación.'
         },
         4: {
-            question: '¿Es compatible con dispositivos móviles?',
-            answer: 'Sí, SafeWare es completamente responsivo y accesible desde smartphones, tablets y computadoras sin perder funcionalidad.'
+            question: '¿Necesito conocimientos técnicos para usarlo?',
+            answer: 'No, SafeWare ofrece una interfaz intuitiva que permite a cualquier usuario configurar alertas y monitorear riesgos sin complicaciones.'
         },
         5: {
             question: '¿Cómo mejora SafeWare mi negocio?',
@@ -340,7 +340,7 @@ en : {
       1: {
         question: "What is SafeWare?",
         answer:
-          "SafeWare is an advanced solution that uses artificial intelligence to detect real-time risks, protecting your industry 24/7.",
+          "SafeWare is an intelligent system that monitors critical conditions in warehouses and industries, detecting anomalies and preventing failures through IoT sensors and real-time alerts.",
       },
       2: {
         question: "Who can use SafeWare?",
@@ -348,14 +348,14 @@ en : {
           "SafeWare is designed for industries such as manufacturing, logistics, and warehouses that require continuous monitoring and advanced security.",
       },
       3: {
+        question: "What kind of anomalies can SafeWare detect?",
+        answer:
+          "SafeWare detects temperature, humidity, vibration, motion, and leak anomalies, identifying any condition that could compromise safety or operations.",
+      },
+      4: {
         question: "Do I need technical knowledge to use it?",
         answer:
           "No, SafeWare offers an intuitive interface that allows any user to set up alerts and monitor risks easily.",
-      },
-      4: {
-        question: "Is it compatible with mobile devices?",
-        answer:
-          "Yes, SafeWare is fully responsive and accessible from smartphones, tablets, and computers without losing functionality.",
       },
       5: {
         question: "How does SafeWare improve my business?",
